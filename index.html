@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Lembrete de Compromisso</title>
+    
+    <script src="https://kit.fontawesome.com/e4f2683f7b.js" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet"> 
+</head>
+  <body>
+
+    <div class="jumbotron jumbotron-fluid">
+      <form id="formulario">
+        <div class="container">
+          <h1 class="display-4" style="font-family: 'Girassol', cursive;">Lembrete de HOJE</h1>
+          <p class="lead" style="font-family: 'Girassol', cursive;">O que tem pra fazer ?</p>
+        </div>
+      </div>
+    
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <div id="nova-msg">
+                <h3><i class="fa fa-plus-square"></i>Nova mensagem</h3>
+</div>
+<br>
+<div class="form-group text-center">
+  <div class="col-md-6"> 
+  <input type="text" class="form-control" rows="5" name="" id="inpMensagem" placeholder="Digite sua mensagem...">  
+  </div>
+    <br>
+     
+        <div class="row">
+          <div class="col-md-3"> 
+        <button type="button" class="btn btn-success
+           form-control" id="btnSave">
+        <i class="fa fa-save" aria-hidden="true"> Save</i> 
+      </button></div> 
+     
+       <table>
+        <div class="col-md-3"> 
+          <div id="titular-tarefas">
+      <button type="button" class="btn btn-success
+      form-control" id="btnDelete">
+   <i class="" aria-hidden="true"> Finalizar </i> </button>
+        </div>
+      </div>
+    </table>
+ </div>
+   </div>
+  </div>
+ 
+ </form>
+
+       <div class="col-md-6">
+           <div id="titular-tarefas">
+               <h3><i class="fa fa-envelope-square"></i> Pendentes </h3>
+               <br>
+
+               <table class="table table-hover" >
+                <thead>
+                 
+                    <div id="lsOutput">
+                    <tr>
+                      <th>
+
+                      </th>
+                    </tr>
+                      <tbody id="garage"> 
+                       </tbody>
+                    </div>
+                  </div>
+                 
+          <!--          <script type="text/JavaScript">
+
+                    const inpMensagem = document.getElementById("inpMensagem");
+                    const btnSave = document.getElementById("btnSave");
+                    const lsOutput = document.getElementById("resultados");
+                    const btnDelete = document.getElementById("btnDelete");
+
+                    btnSave.onclick = function () {
+                      
+                      const key = inpMensagem.value;
+                      const value = inpMensagem.value;
+                        
+
+                      console.log(key);
+                      console.log(value);
+                      
+                    if (key && value){
+                      localStorage.setItem(key,value);
+                      location.reload();
+
+                    }
+                                     };
+
+                    for(var i = 0; i < localStorage.length; i++){
+        
+                      const key = localStorage.key(i);
+                      const value = localStorage.getItem(key);
+
+
+                      resultados.innerHTML += '<td><th>' + value + '</th>';
+                      }
+
+
+                    </script> -->
+                   
+                 
+                </thead>
+                            </table>
+
+
+            </div>
+          </div>
+
+        
+           </div>
+       </div>
+          </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
